@@ -60,3 +60,54 @@ bin   etc   initrd.img.old  lost+found  opt   run   sys  var
 boot  home  lib             media       proc  sbin  tmp  vmlinuz
 
 
+# linux pwd 
+```
+https://hungwei0331.pixnet.net/blog/post/352643434-linux---pwd%E6%8C%87%E4%BB%A4
+pwd為print name of current/working directory的縮寫
+
+顧名思義pwd用於顯示目前所在目錄的指令,
+想要知道目前所在的目錄，可以輸入pwd即可：
+1. 列出目前的工作目錄:
+#pwd
+
+2. 顯示出實際的工作目錄，而非連結檔本身的目錄名
+#pwd -P
+
+3. 目錄連接鏈結時，輸出連接路徑
+#pwd -L
+
+bin==binary 執行檔
+
+root@kali:/# cd bin
+root@kali:/bin# pwd -L
+/bin
+root@kali:/bin# pwd -P
+/usr/bin
+
+回到上層目錄===>cd ..
+```
+### 測驗:說明底下程式的意義
+```
+root@kali:/bin# cd ..  回到上層目錄
+root@kali:/# cd  回到根目錄
+root@kali:~# 
+```
+```
+root@kali:/# ls
+0     etc             lib     lost+found  proc  srv  var
+bin   home            lib32   media       root  sys  vmlinuz
+boot  initrd.img      lib64   mnt         run   tmp  vmlinuz.old
+dev   initrd.img.old  libx32  opt         sbin  usr
+```
+
+### 作業一:說明linux 上述的目錄結構
+
+### 建目錄 mkdir 與刪除目錄 rmdir
+
+目錄===directory ===dir 
+```
+root@kali:/# mkdir KSU
+root@kali:/# cd KSU
+root@kali:/KSU# ls
+
+```
