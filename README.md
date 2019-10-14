@@ -111,3 +111,30 @@ root@kali:/# cd KSU
 root@kali:/KSU# ls
 
 ```
+
+
+
+# 實戰：
+```
+(1)在kali linux根目錄建立python資料夾
+(2)下載python課本範例程式https://www.flag.com.tw/bk/ex/f9751
+(3)解壓縮範例程式
+(4)執行python程式
+
+
+(1)root@kali:~# mkdir python
+mkdir: cannot create directory ‘python’: File exists
+root@kali:~# cd python
+root@kali:~/python# ls
+
+
+a= 1
+b= 2
+c = a/b
+print(a, "/", b, "=", c) 
+add = str(a)+"/"+str(b)+"="+str(c)
+print(add)
+1 / 2 = 0.5
+1/2=0.5
+答案是:1 / 2 = 0.5
+1/2=0.5
