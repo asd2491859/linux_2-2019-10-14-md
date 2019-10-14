@@ -127,7 +127,29 @@ mkdir: cannot create directory ‘python’: File exists
 root@kali:~# cd python
 root@kali:~/python# ls
 
+完成python課本第10章
 
+
+
+
+
+# 10-1
+print("hello!")
+print(3*2*(17-2.1))
+print("abc"+"def")
+word = "art"
+print(word.replace("r", "n"))
+-------------------------------
+答案是:
+root@kali:/python# gedit  test1.py
+root@kali:/python# python3 test1.py
+hello!
+89.4
+abcdef
+ant
+
+
+#10-2
 a= 1
 b= 2
 c = a/b
@@ -138,3 +160,55 @@ print(add)
 1/2=0.5
 答案是:1 / 2 = 0.5
 1/2=0.5
+
+# 10-3
+input("Where do you live? ")
+print("I live in Boston. ")
+--------------------------------
+答案是:
+root@kali:/python# gedit  test3.py
+root@kali:/python# python3 test3.py
+Where do you live? 
+I live in Boston. 
+
+# 10-4
+user_place = input("Where do you live? ")
+text = user_place.capitalize()+ "!"
+print(text) 
+print("I hear it's nice there!") 
+-----------------------------------
+答案是:
+root@kali:/python# gedit  test4.py
+root@kali:/python# python3 test4.py
+Where do you live? 
+!
+I hear it's nice there!
+
+
+
+# 10-5
+num = int(input ("Enter a number to find the square of: "))
+user_input = input("Enter a integer to find the square of: ")
+num = int(user_input) 
+print(num*num)
+--------------------------------------------
+答案是:
+root@kali:/python# gedit  test5.py
+root@kali:/python# python3 test5.py
+Enter a number to find the square of: 3
+Enter a integer to find the square of: 4
+16
+
+
+# 10-6
+num1 = float(input("Enter a number: "))
+num2 = float(input("Enter another number: "))
+print(num1, "*", num2, "=", num1*num2)
+---------------------------------------------
+答案是:
+root@kali:/python# gedit  test6.py
+root@kali:/python# python3 test6.py
+Enter a number: 5
+Enter another number: 2
+5.0 * 2.0 = 10.0
+
